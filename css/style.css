@@ -100,6 +100,8 @@ body {
   position: relative;
   width: 50px;
   height: 25px;
+  appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
   background-color: var(--tertiary-color);
   outline: none;
@@ -214,6 +216,8 @@ body {
   width: 14px;
   height: 14px;
   margin-right: 6px;
+  appearance: none;
+  -moz-appearance: none;
   -webkit-appearance: none;
   background: var(--input-color);
   cursor: pointer;
@@ -326,8 +330,6 @@ input[type="button"]:hover {
     top: 33vh;
     right: 0;
     justify-content: space-beetween;
-  }
-  .form-section .nav h1 {
   }
   .form-section .nav h1 a,
   .form-section .nav h1 span {

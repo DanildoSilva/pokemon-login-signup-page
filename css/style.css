@@ -52,9 +52,9 @@ body {
 }
 
 .main-container .left-section {
-  width: 40%;
+  width: 30%;
   height: 100%;
-  background-image: url(../assets/bg-light.png);
+  background: url(../assets/bg-light.png);
   background-size: cover;
 }
 
@@ -67,13 +67,16 @@ body {
 }
 
 .main-container .right-section {
-  width: 60%;
+  width: 70%;
   height: 100%;
-  padding: 70px 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-section .form-section {
-  height: 100%;
+  width: 55%;
+  height: auto;
 }
 
 .form-section .nav {
@@ -311,6 +314,18 @@ input[type="button"]:hover {
   color: var(--alert-color);
 }
 
+@media screen and (max-width: 1280px) {
+  .right-section .form-section {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .right-section .form-section {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-container .left-section {
     width: 100%;
@@ -324,12 +339,18 @@ input[type="button"]:hover {
     height: auto;
     padding: 0 8% 20px;
   }
+  .right-section .form-section {
+    width: 100%;
+  }
   .form-section .nav {
     position: absolute;
     padding: 0 8%;
     top: 33vh;
     right: 0;
     justify-content: space-beetween;
+  }
+  .form-section .nav h1 {
+    color: #FFFFFF;
   }
   .form-section .nav h1 a,
   .form-section .nav h1 span {

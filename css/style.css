@@ -156,13 +156,17 @@ body {
   justify-content: center;
 }
 
-.right-section .form .input-field {
+.right-section .form input {
   width: 100%;
   height: 100%;
   padding: 0 4%;
   background-color: var(--input-color);
-  outline: 1px solid var(--secondary-color);
+  outline: none;
   border: none;
+}
+
+.right-section .form input:focus {
+  outline: 1px solid var(--secondary-color);
 }
 
 .right-section .form .input-icon {
